@@ -1,0 +1,28 @@
+.main {
+    margin-left: 120px;
+}
+
+.list {
+    
+}
+
+.list-item {
+    margin-left: 450px;
+    margin-right: 540px;
+    margin-top: 50px;
+    padding-left: 50px;
+    background-color: aqua;
+}
+
+.photo {
+    width: 350px;
+    margin-bottom: 1px;
+    margin-left: 380px;
+}
+
+
+.link {
+    margin-left: 440px;
+    color: indigo;
+    background-color: lemonchiffon;
+}
