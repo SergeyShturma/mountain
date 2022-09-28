@@ -1,0 +1,20 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-text-color-dark: #fff;
+  --secondary-text-color-dark: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --secondary-accent-color: #188ce8;
+  --primary-bgc: #fff;
+  --secondary-bgc: #2f303a;
+  --secondary-bgc-dark: #f5f4fa;
+  --studio-header-color: #000;
+  --contact-footer-color: rgba(255, 255, 255, 0.6);
+  --section-padding-top: 94px;
+  --section-padding-bottom: 94px;
+  --column-gap: 30px;
+  --row-gap: 30px;
+  --transition-duration-and-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

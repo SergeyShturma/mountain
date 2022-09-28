@@ -1,0 +1,120 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition-duration-and-timing-function),
+    visibility var(--transition-duration-and-timing-function);
+  background-color: var(--primary-bgc);
+
+  &__close-btn {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    padding: 0;
+    line-height: 0;
+    background-color: transparent;
+    transition: color var(--transition-duration-and-timing-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__close-icon {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+  }
+
+  &.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__container {
+    position: relative;
+    padding-top: 48px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__list {
+    margin-bottom: auto;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    transition: color var(--transition-duration-and-timing-function);
+
+    &_current {
+      color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  &__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+
+  &__contact {
+    margin-bottom: 64px;
+  }
+
+  &__contact-item {
+    margin-bottom: 32px;
+  }
+
+  &__social-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__social-list-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+
+  &__social-list-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}

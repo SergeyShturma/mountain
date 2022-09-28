@@ -1,0 +1,35 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+// .logo {
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   padding-top: 24px;
+//   padding-bottom: 24px;
+//   margin-right: 93px;
+// }
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.page-header__logo-studio {
+  color: var(--studio-header-color);
+}
+
+.footer__logo-studio {
+  color: var(--primary-text-color-dark);
+}
+
+.footer__logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
