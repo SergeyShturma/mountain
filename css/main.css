@@ -639,43 +639,15 @@ body {
 }
 
 .overlay {
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image-mob@2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .overlay {
-    max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image-tab.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image-tab@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .overlay {
-    max-width: 1600px;
-    height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
-  }
-}
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .overlay {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-image@2x.jpg");
-  }
 }
 
 .hero__btn {
@@ -769,6 +741,11 @@ body {
   .features__title {
     max-width: 354px;
     text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__title {
+    text-align: center;
   }
 }
 .features__text {
@@ -918,12 +895,10 @@ body {
 }
 
 .clients {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: var(--section-padding-top);
     padding-bottom: var(--section-padding-bottom);
   }
 }
@@ -976,6 +951,24 @@ body {
   .clients__link {
     width: 170px;
   }
+}
+.clients__link_img1 {
+  background-image: url(../images/Amazon-logo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.clients__link_img2 {
+  background-image: url(../images/Mountain-t-shirts-logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.clients__link_img3 {
+  background-image: url(../images/6pm.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 .clients__icon {
   fill: currentColor;
@@ -1033,10 +1026,12 @@ body {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--primary-text-color);
+  text-align: center;
 }
 .portfolio__text {
   font-size: 16px;
   line-height: 1.88;
+  text-align: center;
   color: var(--secondary-text-color);
 }
 .portfolio__overlay {
@@ -1101,6 +1096,11 @@ body {
 .portfolio__wrapper {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__wrapper {
+    max-height: 294px;
+  }
 }
 .portfolio__link {
   display: flex;
